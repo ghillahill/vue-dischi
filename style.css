@@ -34,12 +34,26 @@ header {
     text-transform: uppercase;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: calc(100vh - 80px);
+    background-color: #dee2e6;
+}
+
 .main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: calc(100vw - 200px);
     padding: 0 100px;
     height: calc(100vh - 80px);
     background-color: #343a40;
