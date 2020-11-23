@@ -3,6 +3,7 @@ var app = new Vue({
     data: {
         dischi: [],
         genere: [],
+        selectedGenre: 'All'
     },
     methods: {
 
