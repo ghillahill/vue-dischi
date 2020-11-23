@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Vue Dischi</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="root">
+            <header>
+                <div class="main-title">
+                    <h1>Lista dischi</h1>
+                </div>
+            </header>
+            <section class="main">
+                <div class="box" v-for="disco in dischi">
+                    <div class="disc-box">
+
+                    </div>
+                    <img :src="disco.poster" :alt="disco.title">
+                    <p class="disc-title">{{ disco.title }}</p>
+                    <p class="disc-author">{{ disco.author }}</p>
+                    <p class="disc-year">{{ disco.year }}</p>
+                </div>
+            </section>
+        </div>
+
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>
