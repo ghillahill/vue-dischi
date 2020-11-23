@@ -1,15 +1,14 @@
 var app = new Vue({
     el: '#root',
     data: {
-        dischi: [],
-        genere: ''
+        dischi: []
     },
     methods: {
 
     },
     methods: {
         onChange(event) {
-            
+
         }
     },
     mounted() {
