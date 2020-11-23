@@ -1,7 +1,8 @@
 var app = new Vue({
     el: '#root',
     data: {
-        dischi: []
+        dischi: [],
+        genere: [],
     },
     methods: {
 
@@ -16,6 +17,13 @@ var app = new Vue({
         .then((response) => {
             let disco = response.data.response;
             this.dischi = disco;
+
+            this.dischi.forEach((element) => {
+                if (!this.genere.includes(element.genre)) {
+                    this.genere.push(element.genre);
+                }
+            });
+
         });
 
     }

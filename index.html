@@ -20,12 +20,9 @@
 
             <div class="container">
                 <div class="menu-select">
-                    <select class="genre-select" v-model="genere">
-                        <option value="">All</option>
-                        <option value="Rock">Rock</option>
-                        <option value="Pop">Pop</option>
-                        <option value="Jazz">Jazz</option>
-                        <option value="Metal">Metal</option>
+                    <select class="genre-select" v-model="selectedGenre">
+                        <option value="all">All</option>
+                        <option v-for="genre in genere" :value="genere">{{ genre }}</option>
                     </select>
                 </div>
                 <section class="main">
